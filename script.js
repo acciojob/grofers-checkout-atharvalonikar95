@@ -4,7 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	const prices=document.querySelectorAll(".price")
+	const prices=document.querySelectorAll(".prices")
 	const total = Array.from(prices).reduce(
 	  (acc, curr) => acc + Number(curr.textContent),
 	  0
@@ -13,7 +13,7 @@ const getSum = () => {
 	// const data = document.createElement("td");
 	row.innerHTML=`
 		  <td class="item">Total</td>
-	      <td class="price">${total}</td>
+	      <td class="prices">${total}</td>
 	`
  document.querySelector("table").appendChild(row);
 };
